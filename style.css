@@ -1,30 +1,144 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
-:root{
-    --mainPink: #ef7998;
-    --mainYellow: rgb(249, 228, 148);
-    --mainWhite: #fff;
-    --mainBlack: #000;
-    --yellowTrans: rgba(249, 228, 148, 0.5);
-    --mainGrey: rgb(238, 238, 238);
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
 }
 
-body{
-    font-family: "kaushan Script", cursive;
+body {
+  font-family: "kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+.navbar-toggler {
+  outline: none;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainPink);
+}
+.nav-link {
+  color: var(--mainPink);
+  font-size: 1.5rem ;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--mainBlack);
+}
+
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 4px;
+  padding: 6.5px 9.5px;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainPink);
+  border-color: var(--mainPink);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+
+.max-height {
+  min-height: cal(100vh - 76px);
+  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+    url("/img/headerBcg.jpeg") center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+.banner-title{
+    color: var(--mainPink);
+    font-size: 4rem;
+}
+.banner-link{
+    font-size: 1.5rem;
+    color: var(--mainBlack);
+    border: 0.2rem solid var(--mainBlack);
+}
+.cart {
+    position: absolute;
+    min-height: 10rem;
     background: var(--mainWhite);
-    color: var(--mainBlack);
-}
-.navbar-toggler{
-    outline: none;
-}
-.toggler-icon{
-    font-size: 40px;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.5);
+    width: 0;
+    overflow: hidden;
+  }
+  .show-cart {
+    width: 18rem;
+    padding: 2rem 1.5rem;
+    transform: rotateY(-360deg);
+  }
+  .cart-item {
+    transition: all 2s ease-in-out;
+  }
+  
+  /* end of cart */
+  /* cart item */
+  .cart-item-remove {
     color: var(--mainPink);
-}
-.nav-link{
-    color: var(--mainPink);
-    font-size: 24px;
-    transition: all 0.5s ease-in-out;
-}
-.nav-link:hover{
+    transition: all 1s ease-in-out;
+  }
+  .cart-item-remove:hover {
+    transform: scale(1.1);
     color: var(--mainBlack);
-}
+  }
+  #cart-item-price {
+    font-size: 0.8rem;
+  }
+  /* cart item */
+  /* cart buttons */
+  .btn-pink {
+    color: var(--mainPink) !important;
+    border-color: var(--mainPink) !important;
+  }
+  .btn-black {
+    color: var(--mainBlack) !important;
+    border-color: var(--mainBlack) !important;
+  }
+  .btn-black:hover {
+    color: var(--mainPink) !important;
+    background: var(--mainBlack) !important;
+  }
+  .btn-pink:hover {
+    background: var(--mainPink) !important;
+    color: var(--mainBlack) !important;
+  }
+  /* end of cart buttons */
+  
+  /* about */
+  .about-img__container {
+    position: relative;
+  }
+  
+  .about-img__container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid var(--mainYellow);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+  }
+  .about-img__container:hover:before {
+    top: 0;
+    left: 0;
+  }
