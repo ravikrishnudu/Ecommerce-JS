@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+:root{
+    --mainPink: #ef7998;
+    --mainYellow: rgb(249, 228, 148);
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --yellowTrans: rgba(249, 228, 148, 0.5);
+    --mainGrey: rgb(238, 238, 238);
+}
+
+body{
+    font-family: "kaushan Script", cursive;
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+}
+.navbar-toggler{
+    outline: none;
+}
+.toggler-icon{
+    font-size: 40px;
+    color: var(--mainPink);
+}
+.nav-link{
+    color: var(--mainPink);
+    font-size: 24px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-link:hover{
+    color: var(--mainBlack);
+}
