@@ -12,7 +12,7 @@
 
     <title>Welcome To Grandma's</title>
   </head>
-  <body>
+  <body class="font-style">
     <header>
       <nav class="navbar navbar-expand-lg px-4">
         <a href="#" class="navbar-brand"
@@ -62,7 +62,7 @@
         <div class="row max-height justify-content-center align-items-center">
           <div class="col-10 mx-auto banner text-center">
             <h1 class="text-capitalize">welcome to <strong class="banner-title ">grandma's</strong></h1>
-            <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+            <a href="#store" class="btn banner-link text-uppercase my-2" id="exp">explore</a>
   
           </div>
           <div id="cart" class="cart">
@@ -195,16 +195,154 @@
       </div>
 
       <!-- 4 -->
-      <div>
-        <div class="card">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+        <div class="card ">
           <div class="img-container">
-            <img src="/img/doughnut-1.jpeg" alt="" class="card-img-top store-img">
-            <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            <img src="img/doughnut-1.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
           </div>
           <div class="card-body">
-            <div>
-              <h5>sweet-item</h5>
-              <h5>$ <strong>5</strong></h5>
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">dougnut item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card ">
+          <div class="img-container">
+            <img src="img/sweets-2.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">sweet item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+        <div class="card ">
+          <div class="img-container">
+            <img src="img/cupcake-2.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">cupcake item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+        <div class="card ">
+          <div class="img-container">
+            <img src="img/cake-2.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">cake item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+        <div class="card ">
+          <div class="img-container">
+            <img src="img/doughnut-2.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">dougnut item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>
+        </div>
+        </div>
+      <!-- 9 -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card ">
+          <div class="img-container">
+            <img src="img/sweets-3.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">sweet item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+        <div class="card ">
+          <div class="img-container">
+            <img src="img/cupcake-3.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">cupcake item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+        <div class="card ">
+          <div class="img-container">
+            <img src="img/cake-3.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">cake item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 12 -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+        <div class="card ">
+          <div class="img-container">
+            <img src="img/doughnut-3.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">dougnut item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
             </div>
           </div>
         </div>

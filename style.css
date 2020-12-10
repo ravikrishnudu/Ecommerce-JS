@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');  
 :root {
   --mainPink: #ef7998;
   --mainYellow: rgb(249, 228, 148);
@@ -9,7 +8,7 @@
   --mainGrey: rgb(238, 238, 238);
 }
 
-body {
+.font-style{
   font-family: "Kaushan Script", cursive;
   background: var(--mainWhite);
   color: var(--mainBlack);
@@ -75,6 +74,11 @@ body {
   border: 0.2rem solid var(--mainBlack);
 }
 .banner-link:hover {
+  background: var(--mainBlack);
+  color: var(--mainPink);
+}
+
+#exp:hover {
   background: var(--mainBlack);
   color: var(--mainpink);
 }
@@ -188,7 +192,8 @@ body {
 .store-item-value {
   color: --mainYellow;
 }
-.search-box {
+
+#search-icon{
   background: var(--mainPink);
   color: var(--mainBlack);
 }
